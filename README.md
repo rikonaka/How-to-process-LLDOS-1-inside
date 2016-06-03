@@ -59,11 +59,26 @@ pip install matplotlib numpy pandas
 Untill you do this, it far from the use of data to drawing
 We still have lot of work to do with this data
 
-### run the `draw_1step.py` with you last step result
+#### run the `draw_1step.py` with you last step result
 
-### run the `draw_2step.py` with the output of `draw_1step.py`
+This step will make sure the dataset which last step output have right time label
+and get the current time label
 
-## In here, I strongly recommended you run the `draw_2step.py` and `draw_finalstep.py` in same directory
-### beacuse the `draw_2step.py` will output a file named `same_list` and the `draw_finalstep.py` will use it
+#### run the `draw_2step.py` with the output of `draw_1step.py`
 
-### If you have any question in my code, welcome to email me at super_big_hero@sina.com
+This step will calculate the absolute time and replace the alert type as value
+also output a file name `same_list`, and this file is the all kinds of labels
+
+### In here, I strongly recommended you run the `draw_2step.py` and `draw_finalstep.py` in same directory
+### Just do it
+#### beacuse the `draw_2step.py` will output a file named `same_list` and the `draw_finalstep.py` will use it
+
+#### Then run the `draw_finalstep.py`
+This code have 3 type chart, choice  one and remove the # in front of line at main()
+
+#### But you have to be careful of time
+
+* I use The EDT NOT EST, But the LLDOS is EST, so i minus 1 at time
+* If you are EST user or some else time zone, i suggest you be care for in  time processing
+
+#### If you have any question in my code, welcome to email me at super_big_hero@sina.com
