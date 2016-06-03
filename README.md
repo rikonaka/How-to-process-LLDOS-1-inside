@@ -14,21 +14,21 @@ I use the open source IDS Snort
 and then, you can find a file name `alert`
 and copy it from /var/log/snort to you Document directory
 
-### First run the `LLDOS_1_inside_1step.py` programs
+#### First run the `LLDOS_1_inside_1step.py` programs
 
 it will output a neat data
 
-### Then run the `LLDOS_1_inside_2step.py` programs
+#### Then run the `LLDOS_1_inside_2step.py` programs
 
 it will remove some unnectessary data
 
-### Then run the `LLDOS_1_inside_3step.py` programs
+#### Then run the `LLDOS_1_inside_3step.py` programs
 
 and it will cut the times and some symbol
 
-### Now you can take the final dataset to the Spark use FP-Growth
+#### Now you can take the final dataset to the Spark use FP-Growth
 
-### and maybe someone want to do more things in the dataset
+#### and maybe someone want to do more things in the dataset
 So, let's look up what can we do with it
 
 #### Maybe we can choice some given IP in the dataset
@@ -69,9 +69,11 @@ and get the current time label
 This step will calculate the absolute time and replace the alert type as value
 also output a file name `same_list`, and this file is the all kinds of labels
 
-### In here, I strongly recommended you run the `draw_2step.py` and `draw_finalstep.py` in same directory
-### Just do it
-#### beacuse the `draw_2step.py` will output a file named `same_list` and the `draw_finalstep.py` will use it
+#### In here, I strongly recommended you run the `draw_2step.py` and `draw_finalstep.py` in same directory
+
+##### Just do it
+
+##### Beacuse the `draw_2step.py` will output a file named `same_list` and the `draw_finalstep.py` will use it
 
 #### Then run the `draw_finalstep.py`
 This code have 3 type chart, choice  one and remove the # in front of line at main()
