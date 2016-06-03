@@ -40,7 +40,7 @@ import os
 import sys
 import re
 
-filename = 'result-alert_i'
+filename = 'alert' # input you filename of alert
 
 def first_thing():
 	get_o = open(filename, 'r')
